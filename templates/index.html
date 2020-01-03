@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image classification</title>
+	<link rel="stylesheet" href="static/CSS/style.css">
+</head>
+<body>
+<div class="container">
+	<h1>Computer vision model</h1>
+	<p style="font-family:Courier New, monospace ">Classification of such images: <br> 
+	buildings, forest, glacier, mountain, sea, street </p>
+	
+	<form action="/result" method="POST" enctype="multipart/form-data">	
+	
+	<label for="file">Chose image (format: *.jpg)</label>
+	<input type="file" name = "file" accept=".jpg" required>	
+
+	<button type="submit" class="button">Predict</button> 
+
+</form>	
+</div>
+
+
+</body>
+</html>

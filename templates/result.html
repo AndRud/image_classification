@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="static/CSS/style.css">
+	<title>Predict</title>
+</head>
+<body>
+	<div class="container predict">
+		<h2>Prediction</h2>
+		<hr>
+	{% if link and predict: %}
+		<img src="{{link}}">
+		<h4>It's {{predict}}</h4>
+	{% else: %}
+		<h4>Error! invalid file type!</h4>
+
+	{% endif %}	
+	
+	</div>
+	
+</body>
+</html>
